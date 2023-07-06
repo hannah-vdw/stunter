@@ -6,7 +6,7 @@ interface apiData {
     last: string,
   },
   picture: {
-    thumbnail: string
+    large: string
   }
 }
 
@@ -17,7 +17,7 @@ export const fetchUser = async (): Promise<User[]> => {
 
   return response.results.map((userData: apiData): User => {
     const name = `${userData.name.first} ${userData.name.last}`
-    const imageUrl = userData.picture.thumbnail
+    const imageUrl = userData.picture.large;
 
     return {name, imageUrl}
   })

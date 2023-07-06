@@ -1,3 +1,10 @@
 :root {
   --primary-color: #fe426f;
+  --secondary-color: #88D18A;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }

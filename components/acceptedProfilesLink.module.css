@@ -1,0 +1,14 @@
+
+
+.link {
+  margin-top: 180px;
+}
+
+.link a {
+  font-size: 28px;
+  color: black
+}
+
+.link a:hover {
+  color: var(--secondary-color)
+}
