@@ -1,15 +1,7 @@
+const path = require("path");
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-// {
-//   reactStrictMode: true,
-//   images: {
-//       domains: ['127.0.0.1'],
-//   },
-// };
 
-module.exports = nextConfig
-
-module.exports = {
+const nextConfig = {
   images: {
     domains: ['localhost'],
     remotePatterns: [
@@ -21,4 +13,21 @@ module.exports = {
       },
     ],
   },
-}
+  // webpack: (config) => {
+  //     const reactPaths = {
+  //         react: path.join(__dirname, "node_modules/react"),
+  //         "react-dom": path.join(__dirname, "node_modules/react-dom"),
+  //     };
+  //     config.resolve = {
+  //         ...config.resolve,
+  //         alias: {
+  //             ...config.resolve.alias,
+  //             ...reactPaths,
+  //         },
+  //     };
+  //     return config;
+  // },
+};
+
+
+module.exports = nextConfig

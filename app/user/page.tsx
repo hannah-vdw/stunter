@@ -1,7 +1,5 @@
-'use client'
-
 import Image from "next/image"
-import { fetchUser } from "../../data/fetchUser"
+import { fetchUsers } from "../../utils/fetchUsers"
 import { User } from '../../types/global'
 import { useEffect, useState } from "react"
 
@@ -11,7 +9,7 @@ const User: React.FC = () => {
   
   useEffect(() => {
     const fetchData = async () => {
-      const userData = await fetchUser();
+      const userData = await fetchUsers();
       setUsers(userData);
     }
     fetchData();

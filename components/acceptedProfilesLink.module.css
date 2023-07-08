@@ -1,14 +1,21 @@
 
-
 .link {
   margin-top: 180px;
 }
 
-.link a {
+.link button {
   font-size: 28px;
-  color: black
+  color: black;
+  background-color: transparent;
+  border: none;
 }
 
-.link a:hover {
-  color: var(--secondary-color)
+.link button:hover {
+  color: var(--secondary-color);
+}
+
+.link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }

@@ -1,47 +1,33 @@
 'use client'
-
-import { useEffect, useState } from 'react';
+import { useContext } from 'react'
 import Image from 'next/image.js'
-
-import { User } from '@/types/global'
-import { fetchUser } from '@/data/fetchUser';
 import styles from './profileCard.module.css'
+import { StunterContext } from '@/context/state'
+import { UserProfile, UserProfileContext } from '@/types/global'
 
+const ProfileCard = () => {
+  const { currentUserProfile } = useContext(StunterContext) as UserProfileContext
 
-
-const ProfileCard: React.FC = () => {
-  const [users, setUsers] = useState<User[]>([{name: "", imageUrl: ""}])
-  
-  useEffect(() => {
-    const fetchData = async () => {
-      const userData = await fetchUser();
-      setUsers(userData);
-    }
-    fetchData();
-  }, []);
-
-  return (
-    <ProfileCardUI user={users[0]} />
-  )
+  return <ProfileCardUI userProfile={currentUserProfile}/>
 }
 
 interface ProfileCardUIProps {
-  user: User
+  userProfile: UserProfile
 }
 
-const ProfileCardUI: React.FC<ProfileCardUIProps> = ({user}) => {
+const ProfileCardUI: React.FC<ProfileCardUIProps> = ({userProfile}) => {
 
   return (
     <div className={styles.profileCard}>
       <Image 
-        src={user.imageUrl} 
-        alt={user.name} 
+        src={userProfile.imageUrl} 
+        alt={userProfile.name} 
         width={200} 
         height={200}
         // TODO: this can be configured
         unoptimized={true} 
       />
-      <h1>{user.name}</h1>
+      <h1>{userProfile.name}</h1>
     </div>
   )
 }
