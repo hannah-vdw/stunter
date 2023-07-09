@@ -46,12 +46,16 @@ const ShowProfilesUI: React.FC<ShowProfilesUIProps> = ({
   return (
     <div className={styles.link}>
       {showAcceptedUsers ? (
-        <button onClick={handleClick} className={styles.accept}>
-          {releventProfiles ? "Hide Accepted Users" : "Show Accepted Users"}
+        <button onClick={handleClick} className={styles.accepted}>
+          {releventProfiles
+            ? "Hide Accepted Stunters ▿"
+            : `Show Accepted Stunters ▵`}
         </button>
       ) : (
-        <button onClick={handleClick} className={styles.decline}>
-          {releventProfiles ? "Hide Declined Users" : "Show Declined Users"}
+        <button onClick={handleClick} className={styles.declined}>
+          {releventProfiles
+            ? "Hide Declined Stunters ▿"
+            : "Show Declined Stunters ▵"}
         </button>
       )}
 

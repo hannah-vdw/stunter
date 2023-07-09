@@ -7,18 +7,19 @@
   color: black;
   background-color: transparent;
   border: none;
+  transition: 200ms ease;
 }
 
-.link > .accept:hover {
+.link > .accepted:hover {
   color: var(--secondary-color);
 }
 
-.link > .decline:hover {
+.link > .declined:hover {
   color: var(--primary-color);
 }
 
 .link ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px 0;
 }

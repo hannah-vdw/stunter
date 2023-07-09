@@ -6,8 +6,8 @@ import styles from "./header.module.css";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <h1>stunter</h1>
       <Image src={logo} alt="" height={45} width={45} />
+      <h1>stunter</h1>
     </header>
   );
 };

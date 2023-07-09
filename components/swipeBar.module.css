@@ -1,20 +1,28 @@
 .swipeBar {
   height: 80px;
-  margin-top: 40px;
+  margin: 40px 0 50px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .decline,
 .accept {
   border: none;
   background-color: transparent;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: 200ms ease;
+}
+
+.accept:hover {
+  background-color: #ecfaee;
+}
+
+.decline:hover {
+  background-color: #feeaee;
 }
 
 .decline {
-  float: left;
-  margin-left: 20px;
-}
-
-.accept {
-  float: right;
-  margin-right: 15px;
+  margin-right: 170px;
 }
