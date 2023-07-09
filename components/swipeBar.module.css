@@ -1,8 +1,10 @@
 .swipeBar {
+  height: 80px;
   margin-top: 40px;
 }
 
-.decline, .accept {
+.decline,
+.accept {
   border: none;
   background-color: transparent;
 }
@@ -14,5 +16,5 @@
 
 .accept {
   float: right;
-  margin-right: 20px;
+  margin-right: 15px;
 }

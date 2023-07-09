@@ -1,6 +1,5 @@
-
 .link {
-  margin-top: 180px;
+  margin-top: 30px;
 }
 
 .link button {
@@ -10,8 +9,12 @@
   border: none;
 }
 
-.link button:hover {
+.link > .accept:hover {
   color: var(--secondary-color);
+}
+
+.link > .decline:hover {
+  color: var(--primary-color);
 }
 
 .link ul {

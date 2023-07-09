@@ -1,15 +1,15 @@
 export interface APIData {
-  results: [],
+  results: [];
   login: {
-    uuid: string
-  }
+    uuid: string;
+  };
   name: {
-    first: string,
-    last: string,
-  },
+    first: string;
+    last: string;
+  };
   picture: {
-    large: string
-  }
+    large: string;
+  };
 }
 
 export interface UserProfile {
@@ -21,9 +21,7 @@ export interface UserProfile {
 
 export interface UserProfileContext {
   userProfiles: UserProfile[];
-  setUserProfiles: Dispatch<SetStateAction<UserProfile[]>>;  
-  currentUserProfile: UserProfile;
-  setCurrentUserProfile: Dispatch<SetStateAction<UserProfile>>;
-  profileIndex: number, 
-  setProfileIndex: Dispatch<SetStateAction<number>>,
+  setUserProfiles: Dispatch<SetStateAction<UserProfile[]>>;
+  profileIndex: number;
+  setProfileIndex: Dispatch<SetStateAction<number>>;
 }

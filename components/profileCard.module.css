@@ -1,11 +1,36 @@
 .profileCard {
-  margin-top: 80px;
+  margin-top: 60px;
   outline: 1px solid #808080;
   display: inline-block;
   padding: 40px;
+  height: 400px;
+  width: 350px;
+  position: relative;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .profileCard h1 {
   margin-top: 30px;
 }
 
+.stack div {
+  outline: 1px solid #808080;
+  height: 400px;
+  width: 350px;
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.stack div:nth-child(1) {
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+}
+
+.stack div:nth-child(2) {
+  top: 20px;
+  left: 20px;
+  z-index: -2;
+}

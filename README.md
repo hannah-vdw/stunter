@@ -1,13 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started:
 
-Please ensure you have node `v18.16.1` installed.
+1. Please ensure you have node `v18.16.1` installed.
 
-Install the node modules: `npm i`
+2. Install the node modules: `npm i`
 
-Next, run the development server: `npm run dev`
+3. Run the development server: `npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-

@@ -3,13 +3,13 @@ const path = require("path");
 
 const nextConfig = {
   images: {
-    domains: ['localhost'],
+    domains: ["localhost"],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'randomuser.me',
-        port: '',
-        pathname: 'randomuser.me/api/portraits/med/**s',
+        protocol: "https",
+        hostname: "randomuser.me",
+        port: "",
+        pathname: "randomuser.me/api/portraits/med/**s",
       },
     ],
   },
@@ -29,5 +29,4 @@ const nextConfig = {
   // },
 };
 
-
-module.exports = nextConfig
+module.exports = nextConfig;
